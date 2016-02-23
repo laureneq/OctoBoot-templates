@@ -1,4 +1,13 @@
-.content button.more {
+i.more {
+	cursor: pointer;
+	font-size: 2em;
+}
+
+i.more:hover {
+	opacity: .8;
+}
+
+.artistes i.more {
     position: absolute;
     right: 15px;
     top: 55%;
@@ -63,4 +72,14 @@ article {
 .reserve:hover {
 	background-color: white;
 	color: black;
+}
+
+.partenaire img {
+	margin-right: 40px;
+}
+
+.partenaire i.more {
+    position: relative;
+    margin-right: 20px;
+    top: -45px;
 }

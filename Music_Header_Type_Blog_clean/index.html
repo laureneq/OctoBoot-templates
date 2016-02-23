@@ -1,177 +1,156 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-ember-extension="1"><head>
+    <meta charset="utf-8" />
     <title>CL Comédie</title>
-    <meta name="description" content="">
-    <meta name="author" content="simpleacces">
-    <meta http-equiv="content-language" content="fr">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="" />
+    <meta name="author" content="simpleacces" />
+    <meta http-equiv="content-language" content="fr" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Patrick+Hand:n,b,i,bi|Fredericka+the+Great:n,b,i,bi|&amp;subset=latin">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Patrick+Hand:n,b,i,bi|Fredericka+the+Great:n,b,i,bi|&amp;subset=latin" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.min.js"></script>
-</head>
+<style>.aloha-editable br,.aloha-editable br:after{content:"\A";white-space:pre-line;}</style></head>
 <body>
     <div class="ui container">
-        
+
         <div class="intro">
             <div class="share">
-                <span class="label">Pour être tenu au courant des prochaines dates </span>
-                <div class="ui right labeled left icon input">
+                <span class="label">Pour être informé des prochaines dates: </span>
+                <div class="ui action left icon input">
                   <i class="mail icon"></i>
-                  <input type="text" placeholder="inscrivez vous à nos alertes">
-                  <a class="ui tag label">
-                    Je m'inscris
-                  </a>
+                  <input type="text" placeholder="saisissez votre adresse mail" />
+                  <button class="ui button">valider</button>
                 </div>
                 <a href="#"><div class="button facebook"><i class="facebook icon"></i></div></a>
                 <a href="#"><div class="button twitter"><i class="twitter icon"></i></div></a>
                 <a href="#"><div class="button instagram"><i class="instagram icon"></i></div></a>
             </div>
         </div>
-        
+
         <div class="header">
-            <div class="menu">
-                <a href="#"><div class="button active">ACCUEIL</div></a>
-                <a href="#"><div class="button twoline">LES <br/>ARTISTES</div></a>
-                <a href="#"><div class="button twoline">NOS <br/>ACTUALITÉS</div></a>
-                <a href="#"><div class="button twoline">LES CULOTTÉES <br/>DE L'HUMOUR</div></a>
-                <a href="#"><div class="button twoline">C'EST ELLES <br/>C'EST QUI ?</div></a>
-                <a href="#"><div class="button twoline">NOS <br/>PARTENAIRES</div></a>
+            <div class="ui stackable seven column grid clmenu">
+                <div class="column"><a href="/CLComedie"><div class="button active">ACCUEIL</div></a></div>
+                <div class="column"><a href="/CLComedie/artistes/"><div class="button"><p>LES ARTISTES</p></div></a></div>
+                <div class="column"><a href="#"><div class="button">LES ACTUALITÉS</div></a></div>
+                <div class="column"><a href="/CLComedie/festival/"><div class="button twoline">LES CULOTTÉES <br />DE L'HUMOUR</div></a></div>
+                <div class="column"><a href="/CLComedie/presentation/"><div class="button twoline">CL COMEDIE<br />
+C'EST QUI?
+</div></a></div>
+                <div class="column"><a href="/CLComedie/partenaires/"><div class="button">NOS PARTENAIRES</div></a></div>
+                <div class="column"><a href="/CLComedie/presse/"><div class="button">PRESSE</div></a></div>
             </div>
 
             <div class="header_image">
-                <div class="logo"><img src="img/cropped-logo-clcomedie1.png"></div>
-                <h1>C'est Elles Comédie</h1>
+                <div class="logo"><img src="uploads/testlogoHP.png" alt="CL Comedie" title="CL Comedie" /></div>
+                
             </div>
         </div>
 
         <div class="ui stackable grid content">
-            
-            <div class="ten wide column">
-                <h2>NOS ARTISTES</h2>
-                <a href="#"><img src="img/culote.jpg"></a>
-                <a href="#"><img src="img/8mars.jpg"></a>
-                <a href="#"><img src="img/9mars.jpg"></a>
-                <a href="#"><img src="img/10mars.jpg"></a>
-                <button class="ui icon button more">
-                  <i class="add icon"></i>
-                </button>
+
+            <div class="ten wide column artistes">
+                <h2><span style="font-size:28px;">LES ARTISTES</span></h2>
+                <a href="#"><img src="uploads/culotehp.jpg" alt="Festival les Culottées de l'humour mars 2016" title="Festival les Culottées de l'humour mars 2016" /></a>
+                <a href="#"><img src="img/8mars.jpg" alt="Affiche Anne Sophie Girard au théatre casino Barrière - Festival les Culottées de l'humour mars 2016" title="Affiche Anne Sophie Girard au théatre casino Barrière - Festival les Culottées de l'humour mars 2016" /></a>
+                <a href="#"><img src="img/9mars.jpg" alt="Affiche les Demoiselles au café théatre Drole de Scene - Festival les Culottées de l'humour Bordeaux mars 2016" title="Affiche les Demoiselles au café théatre Drole de Scene - Festival les Culottées de l'humour Bordeaux mars 2016" /></a>
+                <a href="#"><img src="img/10mars.jpg" alt="Affiche Candiie à l'Iboat - Festival les Culottées de l'humour Bordeaux mars 2016 " title="Affiche Candiie à l'Iboat - Festival les Culottées de l'humour Bordeaux mars 2016 " /></a>
+                <i class="add circle icon more"></i>
             </div>
-            
+
             <div class="six wide column">
-                <h2>C'EST ELLES</h2>
-                <p class="presentation"><img src="img/celles.png" style="float:left; margin: 18px">C’est Elles Comédie ce n’est pas une troupe de théâtre, ni même un one woman show, CL Comédie c’est la nouvelle association bordelaise, créée en octobre 2013, qui a pour objectif de faire découvrir au public de Bordeaux et sa Métropole les talents de l’humour d’aujourd’hui.
-
-                Si la capitale est inondée de spectacles humoristiques, du stand up au one man show, il est très difficile pour un artiste de s’installer en région bordelaise par manque de scène dédiée.
-
-                Aux grands maux les grands remèdes, l’humour fait parti de la culture, CL Comédie a donc décidé de faire rire pour faire du bien et de rattraper le temps perdu...</p>
+                <h2><span style="font-size:28px;">CL COMEDIE,C'EST QUI?</span></h2>
+                <p class="presentation"><img src="img/celles.png" style="float:left; margin:18px" alt="CL Comedie qui sont-elles?" title="CL Comedie qui sont-elles?" /><span style="font-size:14px" class="cke_focus" contenteditable="true">C comme Candice, L comme Lucie, C’est Elles comme l’humour au féminin, promu par deux expertes en la matière. <br />
+Véritable "<i>bébé JMD Productions"</i> comme elle aime se définir elle-même, <b>Candice Pacaud</b> a fait ses armes en tant que chargée de diffusion et de production pour des artistes comme Bérengere Krief, Alex Lutz, Ben, Jérôme Daran… Régulièrement parisienne pour son travail, elle passe son temps dans les salles à dénicher de nouveaux talents.</span>...  <span style="font-size:14px"><u>Lire la suite</u></span></p>
             </div>
 
             <div class="ten wide column">
-                <h2>ACTUALITÉS</h2>
+                <h2><span style="font-size:28px;">ACTUALITÉS</span></h2>
                 <article>
-                    <h3><strong>8 MARS</strong> <span>ANNE-SOPHIE GIRARD <br/>THEATRE CASINO BARRIERE DE BORDEAUX</span></h3>
-                    <p>Issue du Jamel Comedy Club et auteur de « La femme parfaite est une connasse », Anne-Sophie Girard c’est vous… Mais en pire ! Anne-Sophie Girard peut pleurer devant une frite, a la phobie des conseillers d’orientation et se méfie des filles qui portent « un manteau blanc »...</p>
+                    <h3><strong>8 MARS</strong> <span>ANNE-SOPHIE GIRARD<br />
+<em>THEÂTRE CASINO BARRIERE DE BORDEAUX</em></span></h3>
+                    <p>Issue du Jamel Comedy Club et auteur de « La femme parfaite est une connasse », Anne-Sophie Girard c’est vous… Mais en pire ! Anne-Sophie Girard peut pleurer devant une frite, a la phobie des conseillers d’orientation et se méfie des filles qui portent « un manteau blanc »... <u>Lire la suite</u></p>
                     <div class="line"></div>
                 </article>
                 <article>
-                    <h3><strong>9 MARS</strong> <span>LES DEMOISELLES <br/>CAFE-THEATRE DRÔLE DE SCENE</span></h3>
-                    <p>Le 1er Spectacle Humoristique Solo joué en Duo… ou l’inverse! Ça y est ! Vous en avez rêvé dans vos fantasmes les plus fous, ces 2 comédiennes, tantôt amies, tantôt ennemies, arrivent sur scène pour un spectacle doublement délirant. Un duo pas comme les autres, frais et pétillant, de l’humour et de l’originalité qui vous surprendront…</p>
+                    <h3><strong>9 MARS</strong> <span>LES DEMOISELLES<br />
+<em>CAFE-THEÂTRE DRÔLE DE SCENE</em></span></h3>
+                    <p>Le 1er Spectacle Humoristique Solo joué en Duo… ou l’inverse! Ça y est ! Vous en avez rêvé dans vos fantasmes les plus fous, ces 2 comédiennes, tantôt amies, tantôt ennemies, arrivent sur scène pour un spectacle doublement délirant. Un duo pas comme les autres… <u>Lire la suite</u></p>
                     <div class="line"></div>
                 </article>
                 <article>
-                    <h3><strong>10 MARS</strong> <span>CANDIIE <br/>L’IBOAT</span></h3>
-                    <p>Candiie a pleins d’envies et de projets…Le problème c’est qu’elle a tendance à tout remettre à demain. Pareil pour sa croissance, sa déclaration d’impôt, son mariage, et ce qu’elle devrait faire … hier. La seule chose qu’elle n’a pas remise à demain, c’est son spectacle.</p>
+                    <h3><strong>10 MARS</strong> <span>CANDIIE<br />
+<em>L’IBOAT</em></span></h3>
+                    <p>Candiie a pleins d’envies et de projets… Le problème c’est qu’elle a tendance à tout remettre à demain. Pareil pour sa croissance, sa déclaration d’impôt, son mariage, et ce qu’elle devrait faire … hier. La seule chose qu’elle n’a pas remise à demain... <u>Lire la suite</u></p>
                 </article>
             </div>
 
             <div class="six wide column">
-                <h2>NOS DATES</h2>
+                <h2><span style="font-size:28px;">NOS DATES</span></h2>
                 <div class="ui grid">
-                    
+
                     <div class="four wide column">
-                        <div class="date"><strong>08</strong><br/>MAR</div>
+                        <div class="date"><strong>08</strong><br />MARS</div>
                     </div>
                     <div class="twelve wide column">
                         <div class="date_desc">
-                            Anne-Sophie Girard<br/>
-                            theatre casino<br/>
-                            barriere de bordeaux<br/>
-                        </div>
-                        <div class="reserve">RÉSERVER</div>
+                            Festival les Culottées de l'humour<br />Anne-Sophie Girard<br />Théâtre casino Barrière de Bordeaux</div>
+                        <a href="http://www.fnacspectacles.com/place-spectacle/manifestation/One-man-woman-show-ANNE-SOPHIE-GIRARD-BXGIR.htm#/disponibilite/b5468b50c0a8280e3c3985c6f84fd75c/normale" target="_blank"><div class="reserve"><p>RÉSERVEZ</p></div></a>
                     </div>
 
                     <div class="four wide column">
-                        <div class="date"><strong>09</strong><br/>MAR</div>
+                        <div class="date"><strong>09</strong><br />MARS</div>
                     </div>
                     <div class="twelve wide column">
-                        <div class="date_desc">
-                            Les Demoiselles<br/>
-                            Cafe-theatre<br/>
-                            drôle de scene<br/>
-                        </div>
-                        <div class="reserve">RÉSERVER</div>
+                        <div class="date_desc">Festival les Culottées de l'humour<br />Les Demoiselles<br />
+                            Café-théâtre Drôle de scène</div>
+                        <a href="http://www.billetreduc.com/136829/evt.htm" target="_blank"><div class="reserve"><p>RÉSERVEZ</p></div></a>
                     </div>
 
                     <div class="four wide column">
-                        <div class="date"><strong>10</strong><br/>MAR</div>
+                        <div class="date"><strong>10</strong><br />MARS</div>
                     </div>
                     <div class="twelve wide column">
-                        <div class="date_desc">
-                            Candiie<br/>
-                            L’Iboat<br/>
-                        </div>
-                        <div class="reserve">RÉSERVER</div>
+                        <div class="date_desc">Festival les Culottées de l'humour<br />Candiie<br />L’Iboat</div>
+                        <a href="http://www.fnacspectacles.com/place-spectacle/manifestation/Humoriste-s--SPECTACLE-DE-CANDIIE---DEMAIN--6SDU7.htm#/disponibilite/884ff1ffc0a82810a4578a4e0e186955/normale" target="_blank"><div class="reserve"><p>RÉSERVEZ</p></div></a>
                     </div>
 
                     <div class="four wide column">
-                        <div class="date"><strong>11</strong><br/>MAR</div>
+                        <div class="date"><strong>11</strong><br />MARS</div>
                     </div>
                     <div class="twelve wide column">
-                        <div class="date_desc">
-                            Shirley Souagnon<br/>
-                            dans FREE<br/>
-                            au Rocher de Palmer<br/>
+                        <div class="date_desc">Festival les Culottées de l'humour<br />Shirley Souagno<br />Rocher de Palmer<br />
                         </div>
-                        <div class="reserve">RÉSERVER</div>
+                        <a href="http://www.fnacspectacles.com/place-spectacle/manifestation/Humoriste-s--SHIRLEY-SOUAGNON-YX3OX.htm#/disponibilite/b6305642c0a828108c8b273b8b024f70/normale" target="_blank"><div class="reserve"><p>RÉSERVEZ</p></div></a>
                     </div>
 
                     <div class="four wide column">
-                        <div class="date"><strong>12</strong><br/>MAR</div>
+                        <div class="date"><strong>12</strong><br />MARS</div>
                     </div>
                     <div class="twelve wide column">
-                        <div class="date_desc">
-                            Les Culottes<br/>
-                            Theatre Femina<br/>
+                        <div class="date_desc"><p>Festival les Culottées de l'Humour<br />
+                        Soirée de clôture<br />
+                        Théâtre Femina</p>
                         </div>
-                        <div class="reserve">RÉSERVER</div>
+                        <a href="http://www.fnacspectacles.com/place-spectacle/manifestation/One-man-woman-show-LES-CULOTTEES-DE-L-HUMOUR-CULBO.htm#/disponibilite/63931b37c0a8280d19132ca9dbcfe7cb/normale" target="_blank"><div class="reserve"><p>RÉSERVEZ</p></div></a>
                     </div>
                 </div>
             </div>
 
-            <div class="sixteen wide column">
-                <h2>NOS PARTENAIRES</h2>
-                <a href="http://www.iboat.eu/"><img src="img/iboat.jpg" height="160px"></a>
-                <a href="http://www.rockschool-barbey.com/"><img src="img/logo_rsb_hd_noir.jpg" height="160px"></a>
-                <a href="http://lerocherdepalmer.fr/"><img src="img/titrerochernoirhaut.jpg" height="160px"></a>
+            <div class="sixteen wide column partenaire">
+                <h2><span style="font-size:28px;">NOS PARTENAIRES</span></h2>
+                <a href="http://www.iboat.eu/"><img src="img/iboat.jpg" height="100px" alt="Iboat - Partenaire CL Comédie" title="Iboat - Partenaire CL Comédie" /></a>
+                <a href="http://www.rockschool-barbey.com/"><img src="img/logo_rsb_hd_noir.jpg" height="100px" alt="Rock School Barbey - Partenaire CL Comédie" title="Rock School Barbey - Partenaire CL Comédie" /></a>
+                <a href="http://lerocherdepalmer.fr/"><img src="img/titrerochernoirhaut.jpg" height="100px" alt="Le Rocher de Palmer - Partenaire CL Comédie" title="Le Rocher de Palmer - Partenaire CL Comédie" /></a>
+                <i class="add circle icon more"></i>
             </div>
 
             <div class="sixteen wide column"><div class="line"></div>© simple-accès</div>
         </div>
-        
-        <div class="floating tl"><img src="img/banniere.png" width="200px" /><img src="img/rond.png" width="97px" style="position: relative;left: -180px;top: -73px;"/></div>
-        <div class="floating ml"><img src="img/banniere.png" width="100px" /><img src="img/rond.png" width="48px" style="position: relative;left: -90px;top: -36px;"/></div>
-
-        <div class="floating tr"><img src="img/banniere_b.png" width="200px" /><img src="img/rond.png" width="97px" style="position: relative;left: 85px;top: -173px;"/></div>
-        <div class="floating mr"><img src="img/banniere_b.png" width="100px" /><img src="img/rond.png" width="48px" style="position: relative;left: 42px;top: -87px;"/></div>
     </div>
-
-</body>
-</html>
+</body></html>
