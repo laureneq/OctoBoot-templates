@@ -1,0 +1,74 @@
+.container h1, h2, span, p, a, li {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container ul span.list {
+	font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+	margin-right: 5px;
+}
+
+.container a {
+	color: #BDBDBD;
+	text-decoration: underline;
+}
+
+.container a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.container .intro {
+	padding-top: 100px !important;
+}
+
+.container .intro i {
+	float: right;
+	color: #BDBDBD;
+}
+
+.container .intro a {
+	font-size: small;
+}
+
+.container .header {
+	height: 390px;
+	background-image: url(../img/image_header.jpg);
+	background-size: cover;
+	background-position: top center;
+	box-shadow: inset 10px 10px 76px rgba(0,0,0,.3);
+}
+
+.container .header img {
+	width: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	top: -30%;
+}
+
+.container .menu .ui.basic.button {
+	box-shadow: none;
+}
+
+.container .menu .ui.basic.button:hover {
+	box-shadow: none;
+}
+
+.container .menu .column:hover, .menu .column.current {
+	border-bottom: 3px solid black;
+}
+
+.container .menu .column:hover button, .menu .column.current button{
+	color: black !important;
+}
+
+.container .menu.fixed {
+	position: fixed !important;
+	background-color: white;
+	top: 0px;
+	left: 0px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,.3);
+	padding: 1rem 0 0 0 !important;
+}
+
+

@@ -1,0 +1,53 @@
+article {
+	margin-top: 50px;
+}
+
+article h2 {
+	font-size: 22px;
+	line-height: .7em;
+}
+
+article h2 span {
+	color: #BDBDBD;
+	font-size: .5em;
+}
+
+article img {
+	width: 100%;
+}
+
+article ul {
+	list-style-type: none;
+}
+
+article .button {
+	text-align: center;
+	background-color: rgb(230,230,230);
+	height: 30px;
+	padding-top: 4px;
+	margin: 10px 0 10px 0;
+	cursor: pointer;
+}
+
+article .button:hover {
+	color: white;
+}
+
+.four.wide.column h2 {
+	font-size: 17px;
+    margin-top: 45px;
+    margin-bottom: 15%;
+    line-height: 1.7em;
+}
+
+.four.wide.column h2 span {
+	border-bottom: 5px solid black;
+    width: 28px;
+    display: block;
+    margin-top: 10px;
+}
+
+.four.wide.column iframe {
+	width: 100%;
+	border: none;
+}
