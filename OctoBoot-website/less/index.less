@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+}
+
+.bg-fix {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg1.jpg);
+    background-size: auto;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+}
+
+.content {
+    position: relative;
+    
+    section {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .one {
+        height: 650px;
+    }
+
+    .two {
+        height: 400px;
+        background-color: white;
+        padding-top: 25px;
+
+        .left {
+            p {
+                text-align: right;
+                font-family: 'Anton', sans-serif;
+                font-size: 50px;
+                letter-spacing: 0.05em;
+                line-height: 1.1em;
+            }
+        }
+
+        .right {
+            p {
+                margin: 6px;
+                width: 450px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .three {
+        height: 1000px;
+
+        .bg {
+            background-image: url(../img/bg2.jpg);
+            width: 100%;
+            height: 150%;
+            position: absolute;
+            top: -25%;
+        }
+    }
+}
