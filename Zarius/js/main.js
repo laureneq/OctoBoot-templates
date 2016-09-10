@@ -5,7 +5,7 @@ function main() {
    'use strict';
 
 
-	
+
     /*====================================
     Show Menu on Book
     ======================================*/
@@ -18,15 +18,15 @@ function main() {
         }
     });
 
-    $('body').scrollspy({ 
+    $('body').scrollspy({
         target: '.navbar-default',
         offset: 80
     })
-	
+
     /* ==============================================
   	Owl Sliders News, Testimonials, Clients
-  	=============================================== */ 
-	
+  	=============================================== */
+
   	$(document).ready(function(){
 	    $(".news").owlCarousel({
 		autoPlay: 6000,
@@ -41,8 +41,8 @@ function main() {
 		paginationSpeed : 400,
 		stopOnHover: true
         });
-	
-  
+
+
       $(".testimonials").owlCarousel({
 	    navigation : false, // Show next and prev buttons
         pagination: true,
@@ -52,11 +52,11 @@ function main() {
 		autoPlay: 6000,
 		stopOnHover: true,
         singleItem:true
-		
+
         });
-		
-  
-  
+
+
+
   	  $(".clients").owlCarousel({
   	      autoPlay: 3000,
   	      navigation : false, // Show next and prev buttons
@@ -75,11 +75,20 @@ function main() {
 				      ],
   	  });
 
-     
+      window.octoboot_before_save = function(save) {
+        $("html").attr("class", "")
+        // reset owl-carousel
+        $('.owl-carousel').each(function(i, c) {
+            var clone = $(c).find('.item').clone()
+            $(c).html('')
+            $(c).append(clone)
+        })
+        save()
+    }
 
   	});
 
-  
+
 }());
 
 

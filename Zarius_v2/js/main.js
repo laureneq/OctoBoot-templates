@@ -119,6 +119,12 @@ function main() {
     window.octoboot_before_save = function(save) {
        $("html").attr("class", "")
        $(".why-us").slideUp(0)
+       // reset owl-carousel
+       $('.owl-carousel').each(function(i, c) {
+           var clone = $(c).find('.item').clone()
+           $(c).html('')
+           $(c).append(clone)
+       })
        save()
    }
 
