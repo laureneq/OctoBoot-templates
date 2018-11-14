@@ -1,0 +1,132 @@
+<html>
+<head>
+    <title>Facebook</title>
+    <script type="text/javascript" src="js/jquery.min_1.js"></script>
+    <style type="text/css">
+        body {
+            margin: -10px 0;
+            overflow: hidden;
+        }
+        #fb_post_wrapper {
+            text-align: center;
+        }
+        .fb-post {
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="fb_post_wrapper"></div>
+    <script type="text/javascript">
+        /**
+         * Octoboot - Facebook Plugin
+         */
+        (window.OctoBoot_plugins = window.OctoBoot_plugins || {}).facebook_plugin = function(pid, nbr) {
+            if (!pid) {
+                console.error('Facebook Plugin error - page id missing')
+            }
+
+            container = document.getElementById('fb_post_wrapper');
+            var count = nbr = nbr || 1;
+
+            /**
+             * APPEND POST
+             */
+            var ids, post_url;
+            var appendPost = function(url) {
+                var width = $(container).width() > 750 ? 750 : $(container).width();
+                var dom = document.createElement('div');
+                dom.className = 'fb-post';
+                dom.setAttribute('data-href', url);
+                dom.setAttribute('data-width', width)
+
+                if (width > 750) {
+                    $(parent.document).find('iframe.' + pid + nbr).css('width', width);
+                }
+
+                container.appendChild(dom);
+            };
+
+            /**
+             * RESIZE
+             */
+            var previous_height;
+            var resize = function() {
+                var current_height = container.offsetHeight
+                if (previous_height !== current_height) {
+                    $(parent.document).find('iframe.' + pid + nbr).css('height', container.offsetHeight + 'px')
+                    previous_height = current_height
+                }
+            }
+            window.addEventListener('resize', resize)
+
+            /**
+             * Facebook SDK async callback
+             */
+            var postReady,fbReady;
+            var fbInit = function() {
+                FB.init({
+                    xfbml      : true,
+                    version    : 'v2.5'
+                })
+                var inter = setInterval(function() {
+                    if ($('.fb-post').length === $('[fb-xfbml-state="rendered"]').length) {
+                        resize();
+                    }
+                }, 500);
+            }
+            window.fbAsyncInit = function() {
+                fbReady = true
+                if (postReady) {
+                    fbInit()
+                }
+            }
+
+            /**
+             * START - GET FEEDS
+             */
+            $.get('http://octoboot.soizen.ovh/facebook/' + pid + '/feed', function(feeds) {
+                feeds.forEach(function(post_id) {
+                    if (count) {
+                        ids = post_id.split('_');
+                        post_url = 'https://www.facebook.com/' + ids[0] + '/posts/' + ids[1];
+                        appendPost(post_url);
+                        count--
+                    }
+                })
+                postReady = true
+                if (fbReady) {
+                    fbInit()
+                }
+            })
+
+            /**
+             * Facebook SDK Tag
+             */
+            ;(function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        }
+
+        /**
+         * Search for data in location and start process
+         */
+        if (location.search) {
+            iframe_data = location.search.replace('?', '').split('|')
+            var checkInterval = setInterval(function() {
+                if ($(window).width() !== 0) {
+                    OctoBoot_plugins.facebook_plugin(iframe_data[0], parseInt(iframe_data[1]))
+                    clearInterval(checkInterval)
+                }
+            }, 500)
+        } else {
+            console.error('facebook module error: facebook id missing on location')
+        }
+    </script>
+
+</body>
+</html>

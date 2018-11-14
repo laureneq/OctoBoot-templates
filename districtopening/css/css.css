@@ -1,0 +1,366 @@
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(../fonts/DPPfSFKxRTXvae2bKDzp5KCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(../fonts/IDnkRTPGcrSVo50UyYNK74nF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Anton Regular'), local('Anton-Regular'), url(../fonts/5t8vP9Hx2udzw372glmOxA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Basic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Basic Regular'), local('Basic-Regular'), url(../fonts/o6rNQ4O3mMTvz3bHPzdNOw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Caudex'), url(../fonts/03NMplHkN8ROgyklztlsOQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Caudex Bold'), local('Caudex-Bold'), url(../fonts/7-zMWCNNzmNM428U56wMq6CWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Caudex';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Caudex Italic'), local('Caudex-Italic'), url(../fonts/K5QBFHw80aDkL3kZuzhkSfesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Caudex';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Caudex Bold Italic'), local('Caudex-BoldItalic'), url(../fonts/_KqFrbEZy5WPWJPByz6OJJ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Chelsea Market';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Chelsea Market'), local('ChelseaMarket-Regular'), url(../fonts/qSdzwh2A4BbNemy78sJLfOSB4-q0KehLImxSVNaiVBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cinzel-Regular'), url(../fonts/Hm1qjDlZpOdVXoa-QGE7_w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cinzel-Bold'), url(../fonts/L74890HNVnUypqWjqGUt1aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cookie';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cookie-Regular'), url(../fonts/pKcurCxn_Ato3MXK6jF2CA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Corben';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Corben Regular'), local('Corben-Regular'), url(../fonts/aAJbkLknKhfXxsbVwcGZiA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Corben';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Corben'), url(../fonts/ljkAb4w-83fUltRn9aENdaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: local('EB Garamond'), local('EBGaramond'), url(../fonts/kYZt1bJ8UsGAPRGnkXPeFZ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Enriqueta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Enriqueta-Regular'), url(../fonts/-KTKVm0Mx9ZCRXL9CXVIbaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Enriqueta';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Enriqueta-Bold'), url(../fonts/I27Pb-wEGH2ajLYP0QrtSInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Forum'), url(../fonts/WIqlIn7uo_Vma4QAUqf-Mw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fredericka the Great';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fredericka the Great'), local('FrederickatheGreat'), url(../fonts/7Es8Lxoku-e5eOZWpxw18oRQ8DD0aAk7ES4QQYHqQcw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jockey One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Jockey One'), local('JockeyOne-Regular'), url(../fonts/8Hj8G_JpSADPYrRpzMno2i3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Slab'), local('JosefinSlab'), url(../fonts/46aYWdgz-1oFX11flmyEfYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Slab Bold'), local('JosefinSlab-Bold'), url(../fonts/NbE6ykYuM2IyEwxQxOIi2H06qf9KHRHwsVx7iw5MXmY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Josefin Slab Italic'), local('JosefinSlab-Italic'), url(../fonts/etsUjZYO8lTLU85lDhZwUitfYakCkPqOMDce0h_3gD8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Josefin Slab Bold Italic'), local('JosefinSlab-BoldItalic'), url(../fonts/af9sBoKGPbGO0r21xJulyyxQL91WRy8t8mPvAX_dIgA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Jura Regular'), local('Jura-Regular'), url(../fonts/BaRU3GSISDJW2nIqbysbmg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kelly Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kelly Slab'), local('KellySlab-Regular'), url(../fonts/4A8U9DtmhklTRFOO_fzgaC3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(../fonts/pR0sBQVcY0JZc_ciXjFsKwAUTJOA6-irsSazDq377BE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url(../fonts/kH7K4InNTm7mmOXXjrA5v_gg4qM5Rpmu0ASAribBgqE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url(../fonts/QHIOz1iKF3bIEzRdDFaf5ZEdosCNS0EvOwDBzJZsz8o.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), local('Lobster-Regular'), url(../fonts/TSDaXhyJuDJ-NBU0popSWA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Marck Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Marck Script'), local('MarckScript-Regular'), url(../fonts/O_D1NAZVOFOobLbVtW3bconF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(../fonts/ceRJlaOl8VqdbfWAlFaxNQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mr De Haviland';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mr De Haviland Regular'), local('MrDeHaviland-Regular'), url(../fonts/fD8y4L6PJ4vqDk7z8Y8e215z3qu3EfKOn3awoXToAA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Niconne';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Niconne'), local('Niconne-Regular'), url(../fonts/ELY3pImAH97GBzCDEvUepQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noticia Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noticia Text'), local('NoticiaText-Regular'), url(../fonts/wdyV6x3eKpdeUPQ7BJ5uUInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noticia Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noticia Text Bold'), local('NoticiaText-Bold'), url(../fonts/pEko-RqEtp45bE2P80AAKX06qf9KHRHwsVx7iw5MXmY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noticia Text';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noticia Text Italic'), local('NoticiaText-Italic'), url(../fonts/dAuxVpkYE_Q_IwIm6elsKCtfYakCkPqOMDce0h_3gD8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noticia Text';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Noticia Text Bold Italic'), local('NoticiaText-BoldItalic'), url(../fonts/-rQ7V8ARjf28_b7kRa0JuixQL91WRy8t8mPvAX_dIgA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(../fonts/gk5FxslNkTTHtojXrkp-xD1GzwQ5qF9DNzkQQVRhJ4g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(../fonts/gk5FxslNkTTHtojXrkp-xJhsE6jcpsD2oq89kgohWx0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Overlock';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Overlock'), local('Overlock-Regular'), url(../fonts/oIwdBjO99oH_APMcy7EuWPesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Overlock';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Overlock-Bold'), url(../fonts/EcjpF2hW5gSZ4M16YLdG850EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Overlock';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Overlock-Italic'), url(../fonts/pYVxOAQWse7sQP47UJIxiy3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Overlock';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Overlock-BoldItalic'), url(../fonts/wFWnYgeXKYBks6gEUwYnfPEr6Hm6RMS0v1dtXsGir4g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Patrick Hand'), local('PatrickHand-Regular'), url(../fonts/9BG3JJgt_HlF3NpEUehL0InF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Play'), local('Play-Regular'), url(../fonts/PeTTkHQKj5rUPVxkIGAoaw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Play Bold'), local('Play-Bold'), url(../fonts/j7wx-rRiDuE-JcaZ1ilpKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url(../fonts/2NBgzUtEeyB-Xtpr9bm1Cczai8e7xzqnKiVb1EwOy0E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(../fonts/UC3ZEjagJi85gF9qFaBgIETamuWRjOQSPxoOXgdYd7c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(../fonts/9MkijrV-dEJ0-_NWV7E6N218GKU_F_kIyfK-gGC-Yzs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url(../fonts/n7G4PqJvFP2Kubl0VBLDEGewmj-_04VMEgCJvu_4mtU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(../fonts/bIcY3_3JNqUVRAQQRNVteQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(../fonts/JbtMzqLaYbbbCL9X6EvaIy3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Raleway Italic'), local('Raleway-Italic'), url(../fonts/IIm-lPOtfVKQy0GMiczF_6CWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Raleway Bold Italic'), local('Raleway-BoldItalic'), url(../fonts/lFxvRPuGFG5ktd7P0WRwKonF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sacramento';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sacramento'), local('Sacramento-Regular'), url(../fonts/WFDkXpubrEwopJnSlHV6CC3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sail';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sail'), local('Sail-Regular'), url(../fonts/Vg2vShBSSTgEGWTyPO_V-g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sarina';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sarina'), local('Sarina-Regular'), url(../fonts/Lrs9D2ShM-BOYNegh41IXw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Signika'), local('Signika-Regular'), url(../fonts/ejLRhBEorqjLDaF8s-xuTQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Signika-Bold'), url(../fonts/7M5kxD4eGxuhgFaIk95pBS3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Spinnaker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Spinnaker'), local('Spinnaker-Regular'), url(../fonts/WxzDAY6mC9v3znSJEtCoW6CWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
